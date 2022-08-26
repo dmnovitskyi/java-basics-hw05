@@ -1,5 +1,11 @@
-public class Kiwi {
-  // TODO fix class declaration
+public class Kiwi extends NonFlyingBird {
 
-  // TODO override toString method by returning a string with the class name
+    public Kiwi() {
+        Zoo.birds.add(this);
+  }
+
+  @Override
+  public String toString() {
+      return this.getClass().getName();
+  }
 }

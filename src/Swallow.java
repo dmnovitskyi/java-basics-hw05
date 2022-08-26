@@ -1,5 +1,11 @@
-public class Swallow {
-  // TODO fix class declaration
+public class Swallow extends FlyingBird {
 
-  // TODO override toString method by returning a string with the class name
+  public Swallow() {
+      Zoo.birds.add(this);
+  }
+
+  @Override
+  public String toString() {
+      return this.getClass().getName();
+  }
 }

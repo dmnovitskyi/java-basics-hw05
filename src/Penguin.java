@@ -1,5 +1,11 @@
-public class Penguin {
-  // TODO fix class declaration
+public class Penguin extends NonFlyingBird{
 
-  // TODO override toString method by returning a string with the class name
+  public Penguin() {
+      Zoo.birds.add(this);
+  }
+
+  @Override
+  public String toString() {
+      return this.getClass().getName();
+  }
 }
